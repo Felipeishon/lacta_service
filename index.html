@@ -18,6 +18,7 @@
     <title>Consejería de Lactancia | Andrea Matta</title>
     <link rel="icon" href="./img/logo_trans.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="modal.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -26,7 +27,11 @@
     <header>
         <img src="./img/logo_trans.png" alt="Logo de Andrea Matta, Consejera de Lactancia" class="logo" loading="lazy">
         <h1>Andrea Matta</h1>
-        <h2>Consejera de Lactancia Certificada</h2>
+        <h2>
+            <a href="#" id="openCertModal" style="color:inherit;text-decoration:underline;cursor:pointer;">
+                Consejera de Lactancia Certificada
+            </a>
+        </h2>
         <p>"Apoyo profesional para un inicio amoroso y seguro"</p>
     </header>
 
@@ -77,8 +82,23 @@
 
     <!-- Footer -->
     <footer>
-        <p>© 2024 | Certificada por LEAARC</p>
+        <p>
+            © 2024 | 
+            <a href="#" id="openCertModalFooter" style="color:inherit;text-decoration:underline;cursor:pointer;">
+                Certificada por LEAARC
+            </a>
+        </p>
         <p><a href="/politica-de-privacidad.html">Política de Privacidad</a></p>
     </footer>
+
+    <!-- Modal for certificate -->
+    <div class="modal" id="certModal">
+        <div class="modal-content">
+            <button class="close-modal" id="closeCertModal" aria-label="Cerrar">×</button>
+            <img src="./img/certificación_lactancia.jpg" alt="Certificado de Lactancia">
+            <p>Certificado de Lactancia</p>
+        </div>
+    </div>
+    <script src="modal.js"></script>
 </body>
 </html>
